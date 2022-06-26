@@ -1,12 +1,9 @@
 # Landing Page Project
 
-<!-- Add banner here -->
-
-# Project Title
-
 <!-- Add buttons here -->
 
 <!-- Describe your project in brief -->
+build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page. 
 
 <!-- The project title should be self explanotory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
 
@@ -57,17 +54,10 @@ Here is a random GIF as a placeholder.
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Project Title](#project-title)
-- [Demo-Preview](#demo-preview)
+- [Landing Page](#project-title)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-- [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
-- [License](#license)
-- [Footer](#footer)
+- [Features](#features)
 
 # Installation
 [(Back to top)](#table-of-contents)
@@ -89,13 +79,12 @@ To use this project, first clone the repo on your device using the command below
 ```git init```
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
+simple static website, just Download the repo files then run index.html
 
-# Usage
-[(Back to top)](#table-of-contents)
 
 <!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
-
-# Development
+simple static website, just run index
+# Features
 [(Back to top)](#table-of-contents)
 
 <!-- This is the place where you give instructions to developers on how to modify the code.
@@ -105,44 +94,12 @@ You could give **instructions in depth** of **how the code works** and how every
 You could also give specific instructions to how they can setup their development environment.
 
 Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
-
-# Contribute
-[(Back to top)](#table-of-contents)
-
-<!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
-
-Also this shows how you can add subsections within a section. -->
-
-### Sponsor
-[(Back to top)](#table-of-contents)
-
-<!-- Your project is gaining traction and it is being used by thousands of people(***with this README there will be even more***). Now it would be a good time to look for people or organisations to sponsor your project. This could be because you are not generating any revenue from your project and you require money for keeping the project alive.
-
-You could add how people can sponsor your project in this section. Add your patreon or GitHub sponsor link here for easy access.
-
-A good idea is to also display the sponsors with their organisation logos or badges to show them your love!(*Someday I will get a sponsor and I can show my love*) -->
-
-### Adding new features or fixing bugs
-[(Back to top)](#table-of-contents)
-
-<!-- This is to give people an idea how they can raise issues or feature requests in your projects. 
-
-You could also give guidelines for submitting and issue or a pull request to your project.
-
-Personally and by standard, you should use a [issue template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/ISSUE_TEMPLATE.md) and a [pull request template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/PULL_REQ_TEMPLATE.md)(click for examples) so that when a user opens a new issue they could easily format it as per your project guidelines.
-
-You could also add contact details for people to get in touch with you regarding your project. -->
-
-# License
-[(Back to top)](#table-of-contents)
-
-<!-- Adding the license to README is a good practice so that people can easily refer to it.
-
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
-
-I personally add the name of the license and provide a link to it like below. -->
-
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+This project requires you to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
+- Adding a Responsive Navigation bar 
+- Building a Navigation bar dynamically using Javacsript
+- Adding a class 'active' to the section and the anchor element when in viewport of the user
+- Smooth scrolling to the related section when the tag anchor is clicked 
+- Hiding the fixed navigation bar while not scrolling
 
 # Footer
 [(Back to top)](#table-of-contents)
