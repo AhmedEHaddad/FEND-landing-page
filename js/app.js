@@ -23,13 +23,21 @@
  * 
 */
 
+const navBar = document.getElementById("navbar__list");
+const sections = document.querySelectorAll('section');
+//navBar.innerHTML += '<li><a href="#" class="menu__link">Section1</a></li>';
+//navBar.innerHTML += '<li><a href="#" class="menu__link">Section2</a></li>';
+
+
 
 /**
  * End Global Variables
  * Start Helper Functions
  * 
 */
-
+/**
+const listItem = `<li><a href="#" class="menu__link">Section1</a></li>`;
+    navBar.insertAdjacentHTML("beforeend", listItem);*/
 
 
 /**
@@ -39,6 +47,26 @@
 */
 
 // build the nav
+
+
+const addNavBarItems = () => {
+
+    //navBar.innerHTML = '';
+	let navItems = '';
+    
+    sections.forEach((section) => {
+
+        //const sectionID = section.id;
+        const sectionDataNav = section.dataset.nav;
+		navItems += `<li><a class="menu__link" href="#${section.id}"> ${sectionDataNav} </a></li>`;
+		console.log(sectionDataNav);
+
+        //navBar.innerHTML += "<li><a class='menu__link' href='#${section.id}'>${section.id}</a></li>";
+    });
+	navBar.innerHTML = navItems;
+
+
+};	
 
 
 // Add class 'active' to section when near top of viewport
@@ -54,6 +82,7 @@
 */
 
 // Build menu 
+addNavBarItems();
 
 // Scroll to section on link click
 
