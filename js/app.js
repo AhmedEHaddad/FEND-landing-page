@@ -25,8 +25,6 @@
 
 const navBar = document.getElementById("navbar__list");
 const sections = document.querySelectorAll('section');
-//navBar.innerHTML += '<li><a href="#" class="menu__link">Section1</a></li>';
-//navBar.innerHTML += '<li><a href="#" class="menu__link">Section2</a></li>';
 
 
 
@@ -40,19 +38,7 @@ const sections = document.querySelectorAll('section');
 const listItem = `<li><a href="#" class="menu__link">Section1</a></li>`;
     navBar.insertAdjacentHTML("beforeend", listItem);*/	
 
-const offset = (section) => {
-return Math.floor(section.getBoundingClientRect().top);	}
-	
-// remove the active class
-const removeActive = (section) => {
-    section.classList.remove('your-active-class');
-};
-// adding the active class
-const addActive = (conditional, section) => {
-    if(conditional){
-        section.classList.add('your-active-class');
-    };
-};
+
 
 /**
  * End Helper Functions
@@ -127,22 +113,7 @@ document.onscroll = () => {
 addNavBarItems();
 
 // Scroll to section on link click
-/*
-document.querySelectorAll('.navbar__menu a').forEach(event => {
-  // listen to click events
-  event.addEventListener("click", e => {
-    e.preventDefault();
-    const tagId = e.target.getAttribute("href").substr(1);
-    const tagElm = document.getElementById(tagId);
-	const tagElm2 = document.getElementById(`${e.target.dataset.nav}`);
-    tagElm.scrollIntoView({ behavior: "smooth" });
-	//tagElm2.scrollIntoView({ behavior: "smooth" });
-	//alert(e.target);
-	alert(`${e.target.dataset.nav}`);
-	
-  });
-});*/
-//*
+
 navBar.addEventListener("click", (event) => {
   event.preventDefault();
   //if (event.target.dataset.nav) {
@@ -151,22 +122,11 @@ navBar.addEventListener("click", (event) => {
       .scrollIntoView({ behavior: "smooth" });
   //}
 });
-//*/
+
 
 
 
 // Set sections as active
 
-//window.addEventListener('scroll' ,highlightSection);
-const sectionActivation = () => {
-    sections.forEach(section => {
-        const elementOffset = offset(section);
+window.addEventListener('scroll' ,highlightSection);
 
-        inviewport = () => elementOffset < 150 && elementOffset >= -150;
-
-        removeActive(section);
-        addActive(inviewport(),section);
-    });
-};
-
-window.addEventListener('scroll' ,sectionActivation);
