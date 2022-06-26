@@ -38,15 +38,6 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 ![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html): This is not essential but it is a cool way to let others know about your project! Clicking this button automatically opens twitter and writes a tweet about your project and link to it. All the user has to do is to click tweet. Isn't that neat? -->
 
-# Demo-Preview
-
-<!-- Add a demo for your project -->
-
-<!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
-
-Here is a random GIF as a placeholder.
-
-![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif) -->
 
 # Table of contents
 
@@ -108,7 +99,7 @@ This project requires you to build a multi-section landing page, with a dynamica
 
 Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
 
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
+
 
 <!-- Add the footer here -->
 
