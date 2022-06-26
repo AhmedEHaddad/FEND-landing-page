@@ -33,7 +33,8 @@ This project requires you to build a multi-section landing page, with a dynamica
 
 # Files
 [(Back to top)](#table-of-contents)
-project structure:
+<br>
+project structure: <br>
 /css/style.css <br>
 /js/app.js <br>
 /index.html <br>
