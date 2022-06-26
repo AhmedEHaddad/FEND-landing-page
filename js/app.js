@@ -70,14 +70,14 @@ const addNavBarItems = () => {
 
 
 // Add class 'active' to section when near top of viewport
-
+//*
 const highlightSection = () => {
     sections.forEach(section => {
 		let anch = navBar.querySelector(`[data-nav=${section.id}]`);
 		
         if( section.getBoundingClientRect().top <= 150 && section.getBoundingClientRect().top >= -450){			
-			section.classList.remove("your-active-class");
-			anch.classList.remove("active-link");
+			section.classList.add("your-active-class");
+			anch.classList.add("active-link");
 		}
 		else{
 			section.classList.remove("your-active-class");
@@ -85,6 +85,35 @@ const highlightSection = () => {
 		}
     });
 };
+//*/
+/*
+let observer = new IntersectionObserver(
+  function (entries, observer) {
+    // for each entry that could be intersecting with current viewport
+    entries.forEach(entry => {
+      // select the related anchor tag
+      let a = document.querySelector(`a[href="#${entry.target.id}"]`);
+      // if entry section is intersecting with the current viewport
+      if (entry.isIntersecting) {
+        // then add "your-active class" to entry section classlist
+        entry.target.classList.add("your-active-class");
+        // and add "your-active class" to anchor element classlist
+        a.classList.add("your-active-class");
+      } else {
+        // else remove the "your-active-class" class from the classlists
+        entry.target.classList.remove("your-active-class");
+        a.classList.remove("your-active-class");
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+
+for (sect of sections) {
+  
+  observer.observe(sect);
+}*/
 
 // Scroll to anchor ID using scrollTO event
 
