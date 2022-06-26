@@ -31,6 +31,10 @@ This project requires you to build a multi-section landing page, with a dynamica
 - Smooth scrolling to the related section when the tag anchor is clicked 
 - Hiding the fixed navigation bar while not scrolling
 
-# Footer
+# Files
 [(Back to top)](#table-of-contents)
+project structure:
+/css/style.css
+/js/app.js
+/index.html
 
